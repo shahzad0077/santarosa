@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./src/output.css" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
+        <!-- Raleway Font CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./src/input.css" />
+        <title>who are we?</title>
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/field-gothic-test");
+        </style>
+    </head>
+    <body style="background-image: url('./src/images/who-are-we/background.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container mx-auto py-8 md:py-6 lg:py-6 xl:py-6">
+            <div class="flex flex-col items-center justify-center text-white space-y-5 md:space-y-10 lg:space-y-10">
+                <!-- Heading (Centered at the Top) -->
+                <div class="flex items-center justify-between w-full">
+                    <div></div>
+                    <h2 class="h1 tracking-wider font-semibold text-white text-center font-heading" style="font-family: 'Field Gothic TEST';">Who are we?</h2>
+                    <div class="flex bg-white rounded-full p-2 z-[9999]">
+                        <button id="menuBtn" class="text-black z-10">
+                            <!-- Menu Icon SVG -->
+                            <svg
+                                id="menuIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                            <!-- Cross Icon SVG -->
+                            <svg
+                                id="crossIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="hidden w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Popup Card -->
+                    <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center items-center z-[9999] overflow-auto">
+                        <div class="bg-white text-black p-10 rounded-xl w-[90%] max-h-[90vh] overflow-y-auto mx-auto space-y-6 relative">
+                            <!-- First Row (Responsive Layout) -->
+                            <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                                <!-- Left Section -->
+                                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] text-white p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg">
+                                        <img src="./src/images/popup-icons/popup-elemets (2).png" alt="" />
+                                        <h1 class="popup-text text-center w-fit">Your Energy Usage</h1>
+                                    </div>
+                                    <div class="grid gap-6">
+                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
+                                            <img src="./src/images/popup-icons/popup-elemets (5).png" alt="" class="w-fit" />
+                                            <h1 class="popup-text text-center w-fit">Your Electric Company vs Solar</h1>
+                                        </div>
+                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
+                                            <img src="./src/images/popup-icons/popup-elemets (3).png" alt="" class="w-fit" />
+                                            <h1 class="popup-text text-center w-fit">Environmental Impact</h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Section -->
+                                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                                    <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg">
+                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                                            <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                                            <h1 class="popup-text text-center w-fit">Solar Steps</h1>
+                                        </div>
+                                        <img src="./src/images/popup-icons/popup-elemets (1).png" alt="" />
+                                    </div>
+                                    <div class="grid gap-6">
+                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
+                                            <img src="./src/images/popup-icons/popup-elemets (4).png" alt="" class="w-fit" />
+                                            <h1 class="popup-text text-center w-fit">Your System Specs</h1>
+                                        </div>
+                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
+                                            <img src="./src/images/popup-icons/popup-elemets (6).png" alt="" class="w-fit" />
+                                            <h1 class="popup-text text-center w-fit">Why?</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second Row (Responsive 4 Columns) -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <!-- Card 1 -->
+                                <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg">
+                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                                        <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                                        <h1 class="popup-text text-center w-fit">System Types</h1>
+                                    </div>
+                                    <img src="./src/images/popup-icons/type.png" alt="" />
+                                </div>
+
+                                <!-- Card 2 (Inner Cards) -->
+                                <div class="grid gap-6">
+                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg">
+                                        <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                                        <h1 class="popup-text text-center w-fit">Who are we?</h1>
+                                    </div>
+                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg">
+                                        <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                                        <h1 class="popup-text text-center w-fit">Our Installer</h1>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="border border-tertiary lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
+                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                                </div>
+
+                                <!-- Card 4 -->
+                                <div class="border border-tertiary lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
+                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
+                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                                    <img src="./src/images/popup-icons/Projects.png" alt="" />
+                                </div>
+                                <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
+                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                                </div>
+                                <div class="grid gap-6">
+                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
+                                        <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                                        <h1 class="popup-text text-center w-fit">Who are we?</h1>
+                                    </div>
+                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
+                                        <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                                        <h1 class="popup-text text-center w-fit">Our installer</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-full mx-auto bg-white/90 text-black p-4 xl:py-16 xl:px-14 rounded-lg shadow-md text-center" style="font-family: 'Field Gothic TEST';">
+                    <h2 class="page-title font-bold mb-4 tracking-wides relative">
+                        In
+                        <span class="text-white bg-primary px-4 py-1 rounded-tl-xl relative inline-block">
+                            2008
+                            <img src="./src/images/who-are-we/text-elemet.png" alt="Decorative Image" class="absolute -top-8 -right-8 w-8 h-8" />
+                        </span>
+                    </h2>
+
+                    <p class="card-text tracking-wider">
+                        we entered the electronics repair retail space and soon after into the solar market. With two retail locations one in Rohnert Park and one in Santa Rosa you are welcome to visit us in person and see our solar panels
+                        on display!
+                    </p>
+                </div>
+                <div class="w-full bg-white/90 py-12 xl:py-16 xl:px-14 rounded-lg shadow-lg">
+                    <!-- Heading -->
+                    <div class="flex justify-center items-center">
+                        <img src="./src/images/who-are-we/stars.png" class="w-[200px] sm:w-[250px] md:w-[270px] lg:w-[350px] xl:w-[400px] 2xl:w-auto" />
+                    </div>
+                    <p class="text-center card-text text-black mb-6 tracking-wider px-6" style="font-family: 'Field Gothic TEST';">Using the highest end equipment, best install and best price doesn't mean cheap. It means quality!</p>
+
+                    <!-- 4 Images in Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 px-6">
+                        <img src="./src/images/who-are-we/card-imag (4).png" alt="Image 1" class="w-full rounded-lg" />
+                        <img src="./src/images/who-are-we/card-imag (1).png" alt="Image 2" class="w-full rounded-lg" />
+                        <img src="./src/images/who-are-we/card-imag (3).png" alt="Image 3" class="w-full rounded-lg" />
+                        <img src="./src/images/who-are-we/card-imag (2).png" alt="Image 4" class="w-full rounded-lg" />
+                    </div>
+
+                    <!-- Centered Logo -->
+                    <div class="flex justify-center mb-8">
+                        <img src="./src/images/who-are-we/googl.png" alt="Logo" class=" " />
+                    </div>
+
+                    <!-- 6 Responsive Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 px-6 text-black">
+                        <div class="bg-white p-6 rounded-lg shadow-md space-y-3 text-center">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2 sm:space-x-4">
+                                    <img src="./src/images/who-are-we/dp.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-[14px] sm:text-[16px] lg:text-[17px] font-semibold text-start">Maine Aim Ranch</p>
+                                        <p class="text-[14px] text-start text-field">3 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="">
+                                    <img src="./src/images/who-are-we/rating.png" alt="" class="w-16 h-4 lg:w-auto lg:h-auto" />
+                                </span>
+                            </div>
+                            <p class="text-md text-start">
+                                I cannot recommend Rami and his team at Solar Santa Rosa highly enough! From the initial consultation, they conducted a thorough review of my household electric usage and designed a solar system with whole
+                                home backup that exceeded my expectations. Their attentiveness to detail was truly impressive, and they kept me informed throughout the installation process with photos at every step.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2 sm:space-x-4">
+                                    <img src="./src/images/who-are-we/dp2.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-[14px] sm:text-[16px] lg:text-[17px] font-semibold text-start">Adrian Card</p>
+                                        <p class="text-[14px] text-start text-field">4 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="">
+                                    <img src="./src/images/who-are-we/rating.png" alt="" class="w-16 h-4 lg:w-auto lg:h-auto" />
+                                </span>
+                            </div>
+                            <p class="text-md text-start">
+                                These folks are great to work with! Everyone who came out here was friendly, conscientious, professional, and detail-oriented. They explained things in a way we could understand and I never felt like anyone
+                                was trying to over sell me on anything. They've followed up a few times since the installation to make sure that everything is working and up to our satisfaction. I've already referred friends to them and I
+                                would highly recommend them.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2 sm:space-x-4">
+                                    <img src="./src/images/who-are-we/dp3.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-[14px] sm:text-[16px] lg:text-[17px] font-semibold text-start">Emerson Lubin</p>
+                                        <p class="text-[14px] text-start text-field">4 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="">
+                                    <img src="./src/images/who-are-we/rating.png" alt="" class="w-16 h-4 lg:w-auto lg:h-auto" />
+                                </span>
+                            </div>
+                            <p class="text-md text-start">
+                                I highly recommend Santa Rosa Solar and Rami for installing my Solar system successfully and in a timely manner at my home My home in Oakmont Village. Rami is very reliable, trustworthy, skilled, confident,
+                                and persistent in finishing my solar unit very reasonable price, in reasonable amount of time considering he endured and conquered because of his persistence of finishing the job of installing my Solar
+                                successfully.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2 sm:space-x-4">
+                                    <img src="./src/images/who-are-we/dp.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-[14px] sm:text-[16px] lg:text-[17px] font-semibold text-start">Dan Ferguson</p>
+                                        <p class="text-[14px] text-start text-field">a months ago</p>
+                                    </div>
+                                </div>
+                                <span class="">
+                                    <img src="./src/images/who-are-we/rating.png" alt="" class="w-16 h-4 lg:w-auto lg:h-auto" />
+                                </span>
+                            </div>
+                            <p class="text-md text-start">
+                                I needed help with my solar system but did not know the installer. Solar Santa Rosa was able to come in and diagnose the problem. The inverter was bad, and the technician was able to contact the manufacturer,
+                                find out it was under warranty, and get a replacement sent out. I was impressed with how he was able to work around the several issues that came up in the reinstall. Even though they supposedly sent the same
+                                model, several things were different. Great job making everything come together!
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md space-y-3 text-center">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2 sm:space-x-4">
+                                    <img src="./src/images/who-are-we/dp5.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-[14px] sm:text-[16px] lg:text-[17px] font-semibold text-start">David Graves</p>
+                                        <p class="text-[14px] text-start text-field">4 months ago</p>
+                                    </div>
+                                </div>
+                                <span class="">
+                                    <img src="./src/images/who-are-we/rating.png" alt="" class="w-16 h-4 lg:w-auto lg:h-auto" />
+                                </span>
+                            </div>
+                            <p class="text-md text-start">
+                                I had a fantastic experience with Rami from Santa Rosa Solar. From start to finish, he demonstrated a high level of professionalism and was incredibly supportive, guiding my family and me through every step
+                                of the process. Importantly, there was no sales pressure at any point. Since installing solar, our PG&E bill has dropped to just $65 per month, with only $15 attributed to electricity and the remainder to
+                                gas. I highly recommend Santa Rosa Solar for anyone seeking a smooth, pressure-free experience.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2 sm:space-x-4">
+                                    <img src="./src/images/who-are-we/dp6.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
+                                    <div class="flex flex-col justify-between">
+                                        <p class="text-[14px] sm:text-[16px] lg:text-[17px] font-semibold text-start">Emerson Lubin</p>
+                                        <p class="text-[14px] text-start text-field">@emerson lubin</p>
+                                    </div>
+                                </div>
+                                <span class="">
+                                    <img src="./src/images/who-are-we/rating.png" alt="" class="w-16 h-4 lg:w-auto lg:h-auto" />
+                                </span>
+                            </div>
+                            <p class="text-md text-start">
+                                Rami was easygoing and a pleasure to work with from start to finish. He carefully evaluated our PG&E bill and used his software to design a solar system tailored to our energy consumption. His transparency
+                                was impressive—he even shared his own PG&E bill, which was under $15 for the electric portion! The customer service was top-notch, with a no-pressure approach that made the decision to go solar feel
+                                effortless. Highly recommend!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Button Group -->
+        <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 flex z-50 bg-white rounded-full shadow-lg overflow-hidden border border-gray-300">
+            <!-- Left Button -->
+            <button id="prevPage" class="cursor-pointer px-5 py-3 text-black hover:bg-gray-100 transition rounded-l-full">
+                ⬅ Left
+            </button>
+
+            <!-- Separator Line -->
+            <div class="w-px bg-gray-300"></div>
+
+            <!-- Right Button -->
+            <button id="nextPage" class="cursor-pointer px-5 py-3 text-black hover:bg-gray-100 transition rounded-r-full">
+                Right ➡
+            </button>
+        </div>
+                
+        <script src="./src/popupScript.js"></script>
+        <script src="./src/navigation.js"></script>
+
+        <!-- Popup Card -->
+        <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">
+            <div class="bg-white text-black p-10 rounded-xl w-[90%] max-h-[90vh] overflow-y-auto scrollbar-hide mx-auto space-y-6 relative">
+                <!-- First Row (Responsive Layout) -->
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Left Section -->
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div
+                            onclick="window.location.href='./your-energy-usage.html'"
+                            class="text-black p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg border border-tertiary hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/popup-elemets (2).png" alt="" />
+                            <h1 class="popup-text text-center w-fit">Your Energy Usage</h1>
+                        </div>
+                        <div class="grid gap-6">
+                            <div
+                                onclick="window.location.href='./your-electric-company-vs-solar.html'"
+                                class="grid grid-cols-[auto_1fr] items-center hover:border-[#EF3A0F] hover:cursor-pointer gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (5).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Your Electric Company vs Solar</h1>
+                            </div>
+                            <div
+                                onclick="window.location.href='./environmental-impact.html'"
+                                class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (3).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Environmental Impact</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div
+                            onclick="window.location.href='./solar-steps.html'"
+                            class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                                <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                                <h1 class="popup-text text-center w-fit">Solar Steps</h1>
+                            </div>
+                            <img src="./src/images/popup-icons/popup-elemets (1).png" alt="" />
+                        </div>
+                        <div class="grid gap-6">
+                            <div
+                                onclick="window.location.href='./your-system-speces.html'"
+                                class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (4).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Your System Specs</h1>
+                            </div>
+                            <div onclick="window.location.href='./why.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                                <img src="./src/images/popup-icons/popup-elemets (6).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Why?</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row (Responsive 4 Columns) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div onclick="window.location.href='./system-types.html'" class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                            <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                            <h1 class="popup-text text-center w-fit">System Types</h1>
+                        </div>
+                        <img src="./src/images/popup-icons/type.png" alt="" />
+                    </div>
+
+                    <!-- Card 2 (Inner Cards) -->
+                    <div class="grid gap-6">
+                        <div
+                            onclick="window.location.href='./who-are-we.html'"
+                            class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">Who are we?</h1>
+                        </div>
+                        <div
+                            onclick="window.location.href='./our-installer.html'"
+                            class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">Our Installer</h1>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div onclick="window.location.href='./who-we-are-backed-by.html'" class="border border-tertiary lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div onclick="window.location.href='./how-battery-solar-systems-work.html'" class="border border-tertiary lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">How Battery Solar Systems Work</h1>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div onclick="window.location.href='./our-projects.html'" class="border border-tertiary p-4 lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">Our Projects</h1>
+                        <img src="./src/images/popup-icons/Projects.png" alt="" />
+                    </div>
+                    <div onclick="window.location.href='./micro-inverter-vs-string-inverter.html'" class="border border-tertiary p-4 lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">Micro Inverter VS String Inverter</h1>
+                    </div>
+                    <div class="grid gap-6">
+                        <div
+                            onclick="window.location.href='./ppa-escalator-calculator.html'"
+                            class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">PPA Escalator Calculator</h1>
+                        </div>
+                        <div onclick="window.location.href='./power-purchase-agreement.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                            <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">Power Purchase Agreement (PPA)</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

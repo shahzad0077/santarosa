@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./src/output.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./src/input.css" />
+        <title>Customer Information</title>
+    </head>
+    <body style="background-image: url('./src/images/index/background.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; font-family: 'Raleway';">
+        <div class="container mx-auto py-8 md:py-10 lg:py-14 xl:py-16">
+            <div class="flex flex-col lg:flex-row gap-8 bg-transparent text-white">
+                <!-- Left Column -->
+                <div class="lg:w-1/2 flex flex-col space-y-2 sm:space-y-8 md:space-y-12 lg:space-y-20 2xl:space-y-[102px] justify-center lg:justify-start items-center lg:items-start">
+                    <img src="./src/images/index/Logo.png" alt="Logo" class="w-32 h-24 flex justify-center lg:justify-start" />
+                    <h1 class="page-title md:pb-4 text-center lg:text-start max-w-full leading-10 lg:leading-normal xl:leading-[100px] 2xl:leading-normal font-semibold tracking-wider" style="font-family: 'Field Gothic TEST';">
+                        Go Solar Today with <span class="font-light">Zero Upfront</span> Costs!
+                    </h1>
+                </div>
+
+                <!-- Right Column -->
+                <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="bg-white/80 lg:px-[45px] lg:py-[35px] p-6 sm:p-8 md:p-12 rounded-2xl shadow-lg w-full max-w-[90%] min-h-[600px] md:min-h-[750px] lg:min-h-[750px]">
+                        <h class="card-title text-black font-semibold mb-6" style="font-family: 'Field Gothic TEST';">Customer Information</h>
+
+                        <div class="space-y-2 sm:space-y-4">
+                            <!-- Name Input -->
+                            <div>
+                                <label class="block bodytext text-field font-medium">Customer Name*</label>
+                                <input
+                                    type="text"
+                                    placeholder="Zain Bergson"
+                                    class="w-full py-1 bodytext sm:py-3 lg:py-4 placeholder:text-black text-black placeholder:bodytext border-b focus:border-b-2 border-tertiary focus:border-[#32B7E1] active:border-[#32B7E1] focus:outline-none"
+                                />
+                            </div>
+
+                            <!-- Address Input -->
+                            <div>
+                                <label class="block bodytext text-field font-medium">Address*</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter Address"
+                                    class="w-full py-1 bodytext sm:py-3 lg:py-4 placeholder:text-black text-black placeholder:bodytext border-b focus:border-b-2 border-tertiary focus:border-[#32B7E1] active:border-[#32B7E1] focus:outline-none"
+                                />
+                            </div>
+
+                            <!-- Phone number and Email -->
+                            <div class="flex flex-col lg:flex-row justify-between gap-4">
+                                <div class="lg:w-1/2">
+                                    <label class="block bodytext text-field font-medium">Phone Number*</label>
+                                    <input
+                                        type="number"
+                                        placeholder="Enter number"
+                                        class="w-full py-1 bodytext sm:py-3 lg:py-4 placeholder:text-black text-black placeholder:bodytext border-b focus:border-b-2 border-tertiary focus:border-[#32B7E1] active:border-[#32B7E1] focus:outline-none"
+                                    />
+                                </div>
+                                <div class="lg:w-1/2">
+                                    <label class="block bodytext text-field font-medium">Email*</label>
+                                    <input
+                                        type="email"
+                                        placeholder="Enter Email"
+                                        class="w-full py-1 bodytext sm:py-3 lg:py-4 placeholder:text-black text-black placeholder:bodytext border-b focus:border-b-2 border-tertiary focus:border-[#32B7E1] active:border-[#32B7E1] focus:outline-none"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block bodytext text-field font-medium">Average Electric Monthly Usage in KWh*</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter value"
+                                    class="w-full py-1 bodytext sm:py-3 lg:py-4 placeholder:text-black text-black placeholder:bodytext border-b focus:border-b-2 border-tertiary focus:border-[#32B7E1] active:border-[#32B7E1] focus:outline-none"
+                                />
+                            </div>
+
+                            <div>
+                                <label class="block bodytext text-field font-medium">Average Electric Monthly Bill*</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter value"
+                                    class="w-full py-1 bodytext sm:py-3 lg:py-4 placeholder:text-black text-black placeholder:bodytext border-b focus:border-b-2 border-tertiary focus:border-[#32B7E1] active:border-[#32B7E1] focus:outline-none"
+                                />
+                            </div>
+                            <div class="relative">
+                                <label class="block bodytext text-field font-medium text-black">Electric Utility Name*</label>
+                                <div class="relative w-full">
+                                    <button
+                                        type="button"
+                                        class="w-full lg-rounded-lg text-black bodytext py-1 sm:py-3 lg:py-5 border-b focus:border-b-2 lg:text-[20px] font-[500] border-tertiary rounded-lg flex justify-between items-center focus:outline-none"
+                                        onclick="toggleDropdown()"
+                                        id="dropdownButton"
+                                    >
+                                        Select Utility
+                                        <i class="lnr lnr-chevron-down"></i>
+                                    </button>
+                                    <ul class="hidden absolute w-full px-6 py-8 bg-white shadow-lg rounded-lg bottom-full mb-2 z-10" id="dropdown">
+                                        <li class="p-2 cursor-pointer text-tertiary bodytext select-none">Electric Utility Name</li>
+                                        <li class="py-2 px-4 cursor-pointer bodytext hover:bg-[#F4F4F4] text-black" onclick="selectOption('PG&E')">PG&E</li>
+                                        <li class="py-2 px-4 cursor-pointer bodytext hover:bg-[#F4F4F4] text-black" onclick="selectOption('Healdsburg Electric')">Healdsburg Electric</li>
+                                        <li class="py-2 px-4 cursor-pointer bodytext hover:bg-[#F4F4F4] text-black" onclick="selectOption('Silicon Valley Power')">Silicon Valley Power</li>
+                                        <li class="py-2 px-4 cursor-pointer bodytext hover:bg-[#F4F4F4] text-black" onclick="selectOption('Other')">Other</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex justify-center lg:justify-end" onclick="">
+                                <button onclick="handleSubmit()" class="bg-secondary bodytext text-white py-2 sm:py-3 mt-4 sm:mt-[28px] px-6 sm:px-8 rounded-4xl">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Button Group -->
+        <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 flex z-50 bg-white rounded-full shadow-lg overflow-hidden border border-gray-300">
+            <!-- Left Button -->
+            <button id="prevPage" class="cursor-pointer px-5 py-3 text-black hover:bg-gray-100 transition rounded-l-full">
+                ⬅ Left
+            </button>
+
+            <!-- Separator Line -->
+            <div class="w-px bg-gray-300"></div>
+
+            <!-- Right Button -->
+            <button id="nextPage" class="cursor-pointer px-5 py-3 text-black hover:bg-gray-100 transition rounded-r-full">
+                Right ➡
+            </button>
+        </div>
+
+        <script src="./src/javaScript/index.js"></script>
+        <script src="./src/navigation.js"></script>
+    </body>
+</html>
