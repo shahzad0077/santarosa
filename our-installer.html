@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./src/output.css" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
+        <!-- Raleway Font CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./src/input.css" />
+        <title>Our Installer</title>
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/field-gothic-test");
+        </style>
+    </head>
+    <body style="background-image: url('./src/images/our-installer/background.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container mx-auto py-8 md:py-6 lg:py-6 xl:py-6">
+            <div class="flex flex-col items-center justify-center text-white space-y-5 md:space-y-10 lg:space-y-10">
+                <!-- Star Header -->
+                <div class="flex items-center justify-between w-full">
+                    <div>
+                        <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
+                    </div>
+                    <div>
+                        <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Our Installer</h2>
+                    </div>
+                    <div class="flex bg-white rounded-full p-2 z-[9999]">
+                        <button id="menuBtn" class="text-black z-10">
+                            <!-- Menu Icon SVG -->
+                            <svg
+                                id="menuIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                            <!-- Cross Icon SVG -->
+                            <svg
+                                id="crossIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="hidden w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- /End Header -->
+                <div class="rounded-lg relative w-full h-screen">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 w-full h-full">
+                        <img src="./src/images/our-installer/image.png" alt="Background" class="w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[100vh] object-cover rounded-lg" />
+                    </div>
+
+                    <!-- Cards Container -->
+                    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full bg-black/50 backdrop-blur-md rounded-lg flex flex-col lg:flex-row gap-4 z-10 px-4 sm:px-8 py-6">
+                        <!-- Card 1 -->
+                        <div class="bg-transparent text-white p-6 shadow-lg rounded-lg flex-1 text-center lg:w-[40%] max-h-[274px] shadow-none">
+                            <h2 class="h1 font-semibold tracking-wider text-left leading-tight" style="font-family: 'Field Gothic TEST';">Bright Energy Group</h2>
+                            <p class="h4 font-raleway text-start leading-tight">License Number 1080822</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white p-6 shadow-lg rounded-lg flex-1 space-y-3 sm:space-y-4 lg:space-y-8 lg:w-[30%]">
+                            <div class="flex justify-start">
+                                <img src="./src/images/our-installer/icon (1).png" alt="Icon" class="w-10 h-10 sm:w-12 sm:h-12 lg:w-[95px] lg:h-[95px]" />
+                            </div>
+                            <p class="h5 text-black">Founded in 2020 Headquarters in Benecia</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white p-6 shadow-lg rounded-lg flex-1 space-y-3 sm:space-y-4 lg:space-y-8 lg:w-[30%]">
+                            <div class="flex justify-start">
+                                <img src="./src/images/our-installer/icon (2).png" alt="Icon" class="w-10 h-10 sm:w-12 sm:h-12 lg:w-[95px] lg:h-[95px]" />
+                            </div>
+                            <p class="h5 text-black">We are 1 of 5 Solar Companies Directly Licensed with Enfin for PPA's in California!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full h-full">
+                    <!-- Image Column -->
+                    <div class="flex justify-center">
+                        <img src="./src/images/our-installer/image (2).png" alt="Image" class="w-full h-auto rounded-lg shadow-md" />
+                    </div>
+
+                    <!-- Cards Column -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-2 xl:grid-cols-2">
+                        <!-- Card 1 -->
+                        <div class="rounded-lg overflow-hidden flex justify-center items-center h-full">
+                            <img src="./src/images/our-installer/image (3).png" alt="Card 1" class="w-full h-full object-contain" />
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="rounded-lg overflow-hidden flex justify-center items-center h-full">
+                            <img src="./src/images/our-installer/image (4).png" alt="Card 2" class="w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Card 3 (Text Card) -->
+                        <div class="bg-secondary p-6 rounded-lg space-y-5 xl:space-y-7 flex flex-col justify-center h-full">
+                            <p class="p">We are a direct representative of Bright Energy Group</p>
+                            <div>
+                                <p class="h5">License Number</p>
+                                <h3 class="h1 font-semibold tracking-wider" style="font-family: 'Field Gothic TEST';">1080822</h3>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="rounded-lg overflow-hidden flex justify-center items-center h-full">
+                            <img src="./src/images/our-installer/image (5).png" alt="Card 4" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-6 text-center flex justify-center items-center text-black w-full rounded-lg overflow-hidden">
+                        <h1 class="h3 tracking-wider text-left" style="font-family: 'Field Gothic TEST';">
+                            Introducing our expert team
+                        </h1>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/solar-energy-joseph-nelson.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Horizontally Centered Text Content -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">Joseph Nelson</h3>
+                                <p class="bodytext text-secondary">President & CEO</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (Updated to Match Card 2) -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/David-Hammon-solar-energy.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Horizontally Centered Text Content -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">David Hammon</h3>
+                                <p class="bodytext text-secondary">President of Operations | Founder</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/Austin-Jessop-solar-energy.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Text Content with Background -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">Austin Jessop</h3>
+                                <p class="bodytext text-secondary">Director of Installations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/solar-energy-kevin-wilcox.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Text Content with Background -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">Kevin Wilcox</h3>
+                                <p class="bodytext text-secondary">VP of Sales</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/megan-musser-solar-energy-team.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Text Content with Background -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">Megan Musser</h3>
+                                <p class="bodytext text-secondary">Operations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/solar-energy-hannah-musser.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Text Content with Background -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">Hannah Musser</h3>
+                                <p class="bodytext text-secondary">AP Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <!-- Background Image -->
+                        <img src="./src/images/our-installer/solar-energy-stephanie-cawley 1.png" alt="Card Image" class="w-full h-full object-cover" />
+
+                        <!-- Text Content with Background -->
+                        <div class="absolute bottom-4 left-4 right-4 mx-auto bg-white/90 flex justify-between px-6 py-4 rounded-xl z-10">
+                            <div class="flex flex-col">
+                                <h3 class="font-semibold text-black card-heading">Stephanie Cawley</h3>
+                                <p class="bodytext text-secondary">Office Assistant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-10 gap-6 w-full">
+                    <!-- First Column (70%) -->
+                    <div class="bg-white text-black p-6 rounded-lg lg:col-span-7">
+                        <h2 class="card-h2 font-semibold tracking-wider" style="font-family: 'Field Gothic TEST';">An Entire Team Working For You!</h2>
+                        <p class="bodytext-lite">Our team of experienced system engineers, electricians, project managers, and technicians specialize in energy systems, covering design, sales, and installation.</p>
+                    </div>
+
+                    <!-- Second Column (30%) -->
+                    <div class="bg-white text-black p-6 rounded-lg lg:col-span-3">
+                        <h2 class="card-h2 font-semibold tracking-wider" style="font-family: 'Field Gothic TEST';">Lorem Ipsum dummy</h2>
+                        <p class="bodytext-lite">We are 1 of 5 Solar Companies Directly Licensed with Enfin for PPA's in California!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Button Group -->
+        <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 flex z-50 bg-white rounded-full shadow-lg overflow-hidden border border-gray-300">
+            <!-- Left Button -->
+            <button id="prevPage" class="cursor-pointer px-5 py-3 text-black hover:bg-gray-100 transition rounded-l-full">
+                ⬅ Left
+            </button>
+
+            <!-- Separator Line -->
+            <div class="w-px bg-gray-300"></div>
+
+            <!-- Right Button -->
+            <button id="nextPage" class="cursor-pointer px-5 py-3 text-black hover:bg-gray-100 transition rounded-r-full">
+                Right ➡
+            </button>
+        </div>
+
+        <script src="./src/popupScript.js"></script>
+        <script src="./src/navigation.js"></script>
+
+        <script src="./src/navigation.js"></script>
+
+        <!-- Popup Card -->
+        <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">
+            <div class="bg-white text-black p-10 rounded-xl w-[90%] max-h-[90vh] overflow-y-auto scrollbar-hide mx-auto space-y-6 relative">
+                <!-- First Row (Responsive Layout) -->
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Left Section -->
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div
+                            onclick="window.location.href='./your-energy-usage.html'"
+                            class="text-black p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg border border-tertiary hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/popup-elemets (2).png" alt="" />
+                            <h1 class="popup-text text-center w-fit">Your Energy Usage</h1>
+                        </div>
+                        <div class="grid gap-6">
+                            <div
+                                onclick="window.location.href='./your-electric-company-vs-solar.html'"
+                                class="grid grid-cols-[auto_1fr] items-center hover:border-[#EF3A0F] hover:cursor-pointer gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (5).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Your Electric Company vs Solar</h1>
+                            </div>
+                            <div
+                                onclick="window.location.href='./environmental-impact.html'"
+                                class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (3).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Environmental Impact</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div
+                            onclick="window.location.href='./solar-steps.html'"
+                            class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                                <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                                <h1 class="popup-text text-center w-fit">Solar Steps</h1>
+                            </div>
+                            <img src="./src/images/popup-icons/popup-elemets (1).png" alt="" />
+                        </div>
+                        <div class="grid gap-6">
+                            <div
+                                onclick="window.location.href='./your-system-speces.html'"
+                                class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (4).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Your System Specs</h1>
+                            </div>
+                            <div onclick="window.location.href='./why.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                                <img src="./src/images/popup-icons/popup-elemets (6).png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Why?</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row (Responsive 4 Columns) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div onclick="window.location.href='./system-types.html'" class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                            <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                            <h1 class="popup-text text-center w-fit">System Types</h1>
+                        </div>
+                        <img src="./src/images/popup-icons/type.png" alt="" />
+                    </div>
+
+                    <!-- Card 2 (Inner Cards) -->
+                    <div class="grid gap-6">
+                        <div
+                            onclick="window.location.href='./who-are-we.html'"
+                            class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">Who are we?</h1>
+                        </div>
+                        <div
+                            onclick="window.location.href='./our-installer.html'"
+                            class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">Our Installer</h1>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div onclick="window.location.href='./who-we-are-backed-by.html'" class="border border-tertiary lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div onclick="window.location.href='./how-battery-solar-systems-work.html'" class="border border-tertiary lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">How Battery Solar Systems Work</h1>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div onclick="window.location.href='./our-projects.html'" class="border border-tertiary p-4 lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">Our Projects</h1>
+                        <img src="./src/images/popup-icons/Projects.png" alt="" />
+                    </div>
+                    <div onclick="window.location.href='./micro-inverter-vs-string-inverter.html'" class="border border-tertiary p-4 lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                        <h1 class="popup-text text-center w-fit">Micro Inverter VS String Inverter</h1>
+                    </div>
+                    <div class="grid gap-6">
+                        <div
+                            onclick="window.location.href='./ppa-escalator-calculator.html'"
+                            class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">PPA Escalator Calculator</h1>
+                        </div>
+                        <div onclick="window.location.href='./power-purchase-agreement.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                            <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                            <h1 class="popup-text text-center w-fit">Power Purchase Agreement (PPA)</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

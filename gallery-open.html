@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./src/output.css" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
+        <!-- Raleway Font CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./src/input.css" />
+        <title>Gallery Open</title>
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/field-gothic-test");
+        </style>
+    </head>
+    <body style="background-image: url('./src/images/our-installer/background.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container mx-auto py-8 md:py-6 lg:py-6 xl:py-6">
+            <div class="flex flex-col items-center justify-center text-white space-y-5 md:space-y-10 lg:space-y-10">
+                <!-- Star Header -->
+                <div class="flex items-center justify-between w-full">
+                    <div>
+                        <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
+                    </div>
+                    <div>
+                        <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Adrian peter</h2>
+                    </div>
+                    <div class="flex bg-white rounded-full p-2 z-[9999]">
+                        <button id="menuBtn" class="text-black z-10">
+                            <!-- Menu Icon SVG -->
+                            <svg
+                                id="menuIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                            <!-- Cross Icon SVG -->
+                            <svg
+                                id="crossIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="hidden w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- /End Header -->
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex justify-center items-center">
+                    <div class="w-full">
+                        <!-- Large Image (First Div) -->
+                        <div class="w-full">
+                            <img id="mainImage" src="./src/images/galley-open/main-card.png" alt="Main Image" class="w-full h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] rounded-lg object-cover" />
+                        </div>
+
+                        <!-- Image Grid (Second Div) -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-6">
+                            <img src="./src/images/galley-open/dynamic-img (1).png" alt="Thumbnail 1" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+
+                            <img src="./src/images/galley-open/dynamic-img (2).png" alt="Thumbnail 2" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+
+                            <img src="./src/images/galley-open/dynamic-img (3).png" alt="Thumbnail 3" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+
+                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 4" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+
+                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 5" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+
+                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 6" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                        </div>
+                    </div>
+
+                    <script>
+                        function changeImage(element) {
+                            const mainImage = document.getElementById("mainImage");
+                            mainImage.src = element.src;
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <div class="relative w-full mx-auto rounded-lg overflow-hidden mt-10 lg:mt-20 mb-10">
+                <!-- Background Image-->
+                <div class="w-full h-full">
+                    <img src="./src/images/gallery/snazzy-image 1.png" alt="Background Image" class="w-full h-full" />
+                </div>
+
+                <!-- Card (Over Image) -->
+                <div class="absolute top-3 lg:top-10 left-1/2 transform -translate-x-1/2 bg-white/90 p-6 rounded-xl shadow-lg z-10 w-3/4 overflow-y-auto">
+                    <!-- Heading -->
+                    <h3 class="card-h2 tracking-wider font-semibold text-black text-left" style="font-family: 'Field Gothic TEST';">
+                        Hualapai Indian Reservation
+                    </h3>
+
+                    <!-- Paragraph -->
+                    <p class="bodytext text-gray-600 text-left mt-2">6 projects</p>
+
+                    <!-- Grid of Images -->
+                    <div class="grid lg:grid-cols-4 gap-4 mt-4 sm:grid-cols-2">
+                        <img src="./src/images/gallery/img 1.png" alt="Project 1" class="w-full h-auto rounded-lg object-cover" />
+                        <img src="./src/images/gallery/img 2.png" alt="Project 2" class="w-full h-auto rounded-lg object-cover" />
+                        <img src="./src/images/gallery/img 3.png" alt="Project 3" class="w-full h-auto rounded-lg object-cover" />
+                        <img src="./src/images/gallery/img 4.png" alt="Project 4" class="w-full h-auto rounded-lg object-cover" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./src/navigation.js"></script>
+    </body>
+</html>
