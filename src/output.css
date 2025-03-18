@@ -535,9 +535,6 @@
   .mt-\[40vh\] {
     margin-top: 40vh;
   }
-  .mt-\[400px\] {
-    margin-top: 400px;
-  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -718,9 +715,6 @@
   .h-\[500px\] {
     height: 500px;
   }
-  .h-\[748px\] {
-    height: 748px;
-  }
   .h-auto {
     height: auto;
   }
@@ -820,9 +814,6 @@
   .w-\[2px\] {
     width: 2px;
   }
-  .w-\[25\%\] {
-    width: 25%;
-  }
   .w-\[70px\] {
     width: 70px;
   }
@@ -873,9 +864,6 @@
   }
   .max-w-\[100\%\] {
     max-width: 100%;
-  }
-  .max-w-\[686px\] {
-    max-width: 686px;
   }
   .max-w-full {
     max-width: 100%;
@@ -1775,6 +1763,9 @@
   .bg-black\/50 {
     background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
   }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
@@ -2190,9 +2181,6 @@
   }
   .text-\[32px\] {
     font-size: 32px;
-  }
-  .text-\[50px\] {
-    font-size: 50px;
   }
   .leading-0 {
     --tw-leading: calc(var(--spacing) * 0);
@@ -2963,11 +2951,6 @@
       height: auto;
     }
   }
-  .sm\:w-1\/2 {
-    @media (width >= 40rem) {
-      width: calc(1/2 * 100%);
-    }
-  }
   .sm\:w-8 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 8);
@@ -3409,12 +3392,6 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
-  .md\:text-lg {
-    @media (width >= 48rem) {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
   .md\:text-xl {
     @media (width >= 48rem) {
       font-size: var(--text-xl);
@@ -3602,9 +3579,19 @@
       width: 40%;
     }
   }
+  .lg\:w-\[45\%\] {
+    @media (width >= 64rem) {
+      width: 45%;
+    }
+  }
   .lg\:w-\[50px\] {
     @media (width >= 64rem) {
       width: 50px;
+    }
+  }
+  .lg\:w-\[55\%\] {
+    @media (width >= 64rem) {
+      width: 55%;
     }
   }
   .lg\:w-\[60\%\] {
@@ -3721,11 +3708,6 @@
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
-    }
-  }
-  .lg\:justify-between {
-    @media (width >= 64rem) {
-      justify-content: space-between;
     }
   }
   .lg\:justify-end {
