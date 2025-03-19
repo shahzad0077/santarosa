@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./src/output.css" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
+        <!-- Raleway Font CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./src/input.css" />
+        <title>Specification</title>
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/field-gothic-test");
+        </style>
+    </head>
+    <body style="background-image: url('./src/images/specification/bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+        <div style="background-image: url('./src/images/specification/1st-sec-bg.avif'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+            <div class="container mx-auto py-8 md:py-6 lg:py-6 xl:py-6">
+                <div class="flex flex-col items-center justify-center text-white space-y-5 md:space-y-10 lg:space-y-10">
+                    <!-- Star Header -->
+                    <div class="flex items-center justify-between w-full">
+                        <div>
+                            <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Your System Specs</h2>
+                        </div>
+                        <div class="flex bg-white rounded-full p-2 z-[9999]">
+                            <button id="menuBtn" class="text-black z-10">
+                                <!-- Menu Icon SVG -->
+                                <svg
+                                    id="menuIcon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                                <!-- Cross Icon SVG -->
+                                <svg
+                                    id="crossIcon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="hidden w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /End Header -->
+
+                    <!-- Quotes tabs start here -->
+                    <div class="flex flex-col md:flex-row  justify-between items-center bg-white w-full p-4 rounded-lg">
+                        <div class="flex flex-col text-black">
+                            <p class="bodytext text-tertiary">Quotation type</p>
+                            <h4 class="bodytext font-semibold">Cash quotation</h4>
+                        </div>
+                        <div class="flex justify-between p-4 rounded-lg">
+                            <button id="btn1" class="px-4 py-2 bg-secondary text-white bodytext rounded-lg" onclick="showDiv(1)">Quotes</button>
+                            <button id="btn2" class="px-4 py-2 bg-transparent text-black bodytext rounded-lg" onclick="showDiv(2)">Quotes 2</button>
+                            <button id="btn3" class="px-4 py-2 bg-transparent text-black bodytext rounded-lg" onclick="showDiv(3)">Quotes 3</button>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="w-[70%] sm:w-[60%] md:w-[50%] lg:w-[30%] p-4">
+                            <!-- Card -->
+                            <div class="w-full bg-white/95 p-4 rounded-lg text-black shadow-lg">
+                                <!-- Paragraph -->
+                                <p class="text-gray-700">Your Solar Design</p>
+
+                                <!-- Heading -->
+                                <h2 class="text-xl font-semibold mt-2 text-black">Card Heading</h2>
+
+                                <!-- First Row: Panel and Image -->
+                                <div class="flex justify-between items-center mt-4">
+                                    <span class="text-lg font-medium text-gray-800">Panel</span>
+                                    <img src="https://via.placeholder.com/40" alt="Panel Image" class="w-10 h-10" />
+                                </div>
+
+                                <!-- Second Row: Battery and Image -->
+                                <div class="flex justify-between items-center mt-3 border-b border-dotted">
+                                    <span class="text-lg font-medium text-gray-800">Battery</span>
+                                    <img src="https://via.placeholder.com/40" alt="Battery Image" class="w-10 h-10" />
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <span class="text-lg font-medium text-gray-800">Annual Production</span>
+                                    <span class="text-lg font-medium text-gray-800">1000 KW</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <span class="text-lg font-medium text-gray-800">Total Storage</span>
+                                    <span class="text-lg font-medium text-gray-800">1000 KW</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function showDiv(id) {
+                            // Hide all content divs
+                            document.getElementById("content1").classList.add("hidden");
+                            document.getElementById("content2").classList.add("hidden");
+                            document.getElementById("content3").classList.add("hidden");
+
+                            // Show the selected div
+                            document.getElementById(`content${id}`).classList.remove("hidden");
+
+                            // Reset all buttons to default state
+                            document.getElementById("btn1").classList.remove("bg-secondary", "text-white");
+                            document.getElementById("btn1").classList.add("bg-transparent", "text-black");
+
+                            document.getElementById("btn2").classList.remove("bg-secondary", "text-white");
+                            document.getElementById("btn2").classList.add("bg-transparent", "text-black");
+
+                            document.getElementById("btn3").classList.remove("bg-secondary", "text-white");
+                            document.getElementById("btn3").classList.add("bg-transparent", "text-black");
+
+                            // Set the active button styling
+                            document.getElementById(`btn${id}`).classList.remove("bg-transparent", "text-black");
+                            document.getElementById(`btn${id}`).classList.add("bg-secondary", "text-white");
+                        }
+
+                        // Ensure Quote 1 is active by default on page load
+                        document.addEventListener("DOMContentLoaded", function () {
+                            showDiv(1);
+                        });
+                    </script>
+                </div>
+            </div>
+            <script src="./src/popupScript.js"></script>
+            <script src="./src/navigation.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+
+            <!-- Popup Card -->
+            <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">
+                <div class="bg-white text-black p-10 rounded-xl w-[90%] max-h-[90vh] overflow-y-auto scrollbar-hide mx-auto space-y-6 relative">
+                    <!-- First Row (Responsive Layout) -->
+                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Left Section -->
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div
+                                onclick="window.location.href='./your-energy-usage.html'"
+                                class="text-black p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg border border-tertiary hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/popup-elemets (2).png" alt="" />
+                                <h1 class="popup-text text-center w-fit">Your Energy Usage</h1>
+                            </div>
+                            <div class="grid gap-6">
+                                <div
+                                    onclick="window.location.href='./your-electric-company-vs-solar.html'"
+                                    class="grid grid-cols-[auto_1fr] items-center hover:border-[#EF3A0F] hover:cursor-pointer gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg"
+                                >
+                                    <img src="./src/images/popup-icons/popup-elemets (5).png" alt="" class="w-fit" />
+                                    <h1 class="popup-text text-center w-fit">Your Electric Company vs Solar</h1>
+                                </div>
+                                <div
+                                    onclick="window.location.href='./environmental-impact.html'"
+                                    class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                                >
+                                    <img src="./src/images/popup-icons/popup-elemets (3).png" alt="" class="w-fit" />
+                                    <h1 class="popup-text text-center w-fit">Environmental Impact</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div onclick="window.location.href='./solar-steps.html'" class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                                <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                                    <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                                    <h1 class="popup-text text-center w-fit">Solar Steps</h1>
+                                </div>
+                                <img src="./src/images/popup-icons/popup-elemets (1).png" alt="" />
+                            </div>
+                            <div class="grid gap-6">
+                                <div
+                                    onclick="window.location.href='./your-system-speces.html'"
+                                    class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                                >
+                                    <img src="./src/images/popup-icons/popup-elemets (4).png" alt="" class="w-fit" />
+                                    <h1 class="popup-text text-center w-fit">Your System Specs</h1>
+                                </div>
+                                <div onclick="window.location.href='./why.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                                    <img src="./src/images/popup-icons/popup-elemets (6).png" alt="" class="w-fit" />
+                                    <h1 class="popup-text text-center w-fit">Why?</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row (Responsive 4 Columns) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Card 1 -->
+                        <div onclick="window.location.href='./system-types.html'" class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                            <div class="grid grid-cols-[auto_1fr] items-center gap-3">
+                                <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
+                                <h1 class="popup-text text-center w-fit">System Types</h1>
+                            </div>
+                            <img src="./src/images/popup-icons/type.png" alt="" />
+                        </div>
+
+                        <!-- Card 2 (Inner Cards) -->
+                        <div class="grid gap-6">
+                            <div onclick="window.location.href='./who-are-we.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                                <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Who are we?</h1>
+                            </div>
+                            <div onclick="window.location.href='./our-installer.html'" class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                                <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Our Installer</h1>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div onclick="window.location.href='./who-we-are-backed-by.html'" class="border border-tertiary lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                            <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div
+                            onclick="window.location.href='./how-battery-solar-systems-work.html'"
+                            class="border border-tertiary lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <h1 class="popup-text text-center w-fit">How Battery Solar Systems Work</h1>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div onclick="window.location.href='./our-projects.html'" class="border border-tertiary p-4 lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer">
+                            <h1 class="popup-text text-center w-fit">Our Projects</h1>
+                            <img src="./src/images/popup-icons/Projects.png" alt="" />
+                        </div>
+                        <div
+                            onclick="window.location.href='./micro-inverter-vs-string-inverter.html'"
+                            class="border border-tertiary p-4 lg:p-8 flex flex-col justify-center items-center space-y-4 rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                        >
+                            <h1 class="popup-text text-center w-fit">Micro Inverter VS String Inverter</h1>
+                        </div>
+                        <div class="grid gap-6">
+                            <div
+                                onclick="window.location.href='./ppa-escalator-calculator.html'"
+                                class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">PPA Escalator Calculator</h1>
+                            </div>
+                            <div
+                                onclick="window.location.href='./power-purchase-agreement.html'"
+                                class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg hover:border-[#EF3A0F] hover:cursor-pointer"
+                            >
+                                <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
+                                <h1 class="popup-text text-center w-fit">Power Purchase Agreement (PPA)</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-image: url('./src/images/specification/bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+                <div class="container mx-auto py-8 md:py-6 lg:py-6 xl:py-6">
+                    <div class="flex flex-col items-center justify-center text-white space-y-5 md:space-y-10 lg:space-y-10">
+                        <!-- content 1 -->
+                        <div id="content1" class="hidden w-full">
+                            <div class="bg-white/70 p-6 flex flex-col rounded-lg  md:flex-row justify-between gap-4 w-full">
+                                <!-- Badge 1 -->
+                                <div class="bg-white p-4 rounded-lg shadow-md  sm:w-full flex  items-center">
+                                    <img src="https://via.placeholder.com/80" alt="Image 1" class="w-20 h-20">
+                                    <p class="mt-2 text-gray-700 text-center">Workman Warranty</p>
+                                </div>
+                            
+                                <!-- Badge 2 -->
+                                <div class="bg-white p-4 rounded-lg shadow-md  sm:w-full flex  items-center">
+                                    <img src="https://via.placeholder.com/80" alt="Image 2" class="w-20 h-20">
+                                    <p class="mt-2 text-gray-700 text-center">Roof Panetration Warrenty</p>
+                                </div>
+                            
+                                <!-- Badge 3 -->
+                                <div class="bg-white p-4 rounded-lg shadow-md  sm:w-full flex  items-center">
+                                    <img src="https://via.placeholder.com/80" alt="Image 3" class="w-20 h-20">
+                                    <p class="mt-2 text-gray-700 text-center">solar</p>
+                                </div>
+                            
+                                <!-- Badge 4 -->
+                                <div class="bg-white p-4 rounded-lg shadow-md  sm:w-full flex  items-center">
+                                    <img src="https://via.placeholder.com/80" alt="Image 4" class="w-20 h-20">
+                                    <p class="mt-2 text-gray-700 text-center">Card 4 Text</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- content 2 -->
+                        <div id="content2" class="hidden w-full">
+                            <div class="w-[40%] p-4">
+                                <!-- Card -->
+                                <div class="w-full bg-white/95 p-4 rounded-lg text-black shadow-lg">
+                                    <!-- Paragraph -->
+                                    <p class="text-gray-700">Your Solar Design</p>
+
+                                    <!-- Heading -->
+                                    <h2 class="text-xl font-semibold mt-2 text-black">Card Heading</h2>
+
+                                    <!-- First Row: Panel and Image -->
+                                    <div class="flex justify-between items-center mt-4">
+                                        <span class="text-lg font-medium text-gray-800">Panel</span>
+                                        <img src="https://via.placeholder.com/40" alt="Panel Image" class="w-10 h-10" />
+                                    </div>
+
+                                    <!-- Second Row: Battery and Image -->
+                                    <div class="flex justify-between items-center mt-3 border-b border-dotted">
+                                        <span class="text-lg font-medium text-gray-800">Battery</span>
+                                        <img src="https://via.placeholder.com/40" alt="Battery Image" class="w-10 h-10" />
+                                    </div>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <span class="text-lg font-medium text-gray-800">Annual Production</span>
+                                        <span class="text-lg font-medium text-gray-800">1000 KW</span>
+                                    </div>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <span class="text-lg font-medium text-gray-800">Total Storage</span>
+                                        <span class="text-lg font-medium text-gray-800">1000 KW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- content3 -->
+                        <div id="content3" class="hidden w-full">
+                            <div class="w-[50%] p-4">
+                                <!-- Card -->
+                                <div class="w-full bg-white/95 p-4 rounded-lg text-black shadow-lg">
+                                    <!-- Paragraph -->
+                                    <p class="text-gray-700">Your Solar Design</p>
+
+                                    <!-- Heading -->
+                                    <h2 class="text-xl font-semibold mt-2 text-black">Card Heading</h2>
+
+                                    <!-- First Row: Panel and Image -->
+                                    <div class="flex justify-between items-center mt-4">
+                                        <span class="text-lg font-medium text-gray-800">Panel</span>
+                                        <img src="https://via.placeholder.com/40" alt="Panel Image" class="w-10 h-10" />
+                                    </div>
+
+                                    <!-- Second Row: Battery and Image -->
+                                    <div class="flex justify-between items-center mt-3 border-b border-dotted">
+                                        <span class="text-lg font-medium text-gray-800">Battery</span>
+                                        <img src="https://via.placeholder.com/40" alt="Battery Image" class="w-10 h-10" />
+                                    </div>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <span class="text-lg font-medium text-gray-800">Annual Production</span>
+                                        <span class="text-lg font-medium text-gray-800">1000 KW</span>
+                                    </div>
+                                    <div class="flex justify-between items-center mt-4">
+                                        <span class="text-lg font-medium text-gray-800">Total Storage</span>
+                                        <span class="text-lg font-medium text-gray-800">1000 KW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
