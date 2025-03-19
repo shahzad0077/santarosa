@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
             // Data object for different tab contents
             const tabData = {
                 "Tesla": {
-                    image: "./src/images/type-tesla/card-logo.png",
+                    image: "./src/images/system-types/tesla-logo.png",
                     text: "Founded in 2006, Tesla is a global leader in energy storage and electric vehicles.",
                     heading: "Powerwall 3 - 13.5KWh of Storage"
                 },
                 "Enphase": {
-                    image: "./src/images/type-enphase/card-logo.png",
+                    image: "./src/images/system-types/emphase-logo.png",
                     text: "Founded in 2006 in Petaluma, California, Enphase invented the world's first micro inverter!",
                     heading: "Micro Inverter System"
                 },
                 "Franklin": {
-                    image: "./src/images/type-franklin/card-logo.png",
+                    image: "./src/images/system-types/franklin-logo.png",
                     text: "Franklin, founded in 2019 and headquartered in San Jose, California, has developed one of the most advanced battery backup systems, the aPower 2.",
                     heading: "aPower 2 - 15KWh of Storage"
                 }

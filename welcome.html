@@ -6,6 +6,7 @@
         <link href="./src/output.css" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet" />
         <link
@@ -17,16 +18,16 @@
     </head>
     <body style="background-image: url('./src/images/welcome/background.png'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; font-family: 'Raleway';">
         <div class="container mx-auto py-8 md:py-10 lg:py-14 xl:py-16">
-            <div class="flex flex-col lg:flex-row gap-8 bg-transparent text-white space-y-5 md:space-y-10 lg:space-y-16 items-stretch">
+            <div class="flex flex-col lg:flex-row gap-8 bg-transparent text-white space-y-5 md:space-y-10 lg:space-y-0 items-stretch">
                 <!-- Left Column -->
-                <div class="lg:w-1/2 flex flex-col space-y-2 sm:space-y-8 md:space-y-12 lg:space-y-20 2xl:space-y-[102px] justify-center lg:justify-start items-center lg:items-start">
+                <div class="lg:w-1/2 flex flex-col space-y-2 sm:space-y-8 md:space-y-12 lg:space-t-20 2xl:space-t-[102px] justify-center lg:justify-end items-center lg:items-start">
                     <img src="./src/images/index/Logo.png" alt="Logo" class="w-32 h-24 flex justify-center lg:justify-start" />
-                    <h1 class="page-title md:pb-4 text-center lg:text-start max-w-full leading-10 lg:leading-normal xl:leading-[100px] 2xl:leading-normal font-semibold tracking-wider" style="font-family: 'Field Gothic TEST';">
+                    <h1 data-aos="zoom-in" class="page-title md:pb-4 text-center lg:text-start max-w-full leading-10 lg:leading-normal xl:leading-[100px] 2xl:leading-normal font-semibold tracking-wider" style="font-family: 'Field Gothic TEST';">
                         <span class="font-light"> Welcome to the </span> Bright Energy Group Family
                     </h1>
 
                     <div class="flex flex-col space-y-5">
-                        <div class="flex bg-secondary items-center space-x-2 sm:space-x-4 px-6 py-5 sm:px-[34px] sm:py-8 rounded-lg">
+                        <div data-aos="fade-right" class="flex bg-secondary items-center space-x-2 sm:space-x-4 px-6 py-5 sm:px-[34px] sm:py-8 rounded-lg">
                             <img src="./src/images/welcome/Mask group.png" alt="" class="w-8 h-8 sm:w-12 sm:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16" />
                             <div class="flex flex-col justify-between">
                                 <p class="text-[16px] sm:text-[25px] font-semibold lg:text-[32px] text-start tracking-wider" style="font-family: 'Field Gothic TEST';">Get started</p>
@@ -36,7 +37,7 @@
                                 <span class="lnr lnr-arrow-right flex text-lg md:text-xl font-semibold md:font-bold justify-end items-center"></span>
                             </span>
                         </div>
-                        <div class="flex bg-white text-black justify-between items-center px-6 py-5 sm:px-[34px] sm:py-8 rounded-lg">
+                        <div data-aos="fade-right" class="flex bg-white text-black justify-between items-center px-6 py-5 sm:px-[34px] sm:py-8 rounded-lg">
                             <div class="flex space-x-2 sm:space-x-4">
                                 <img src="./src/images/welcome/schedual-icon.png" alt="" class="w-8 h-8 sm:w-12 sm:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16" />
                                 <div class="flex flex-col justify-between">
@@ -53,7 +54,7 @@
 
                 <!-- Right Column -->
                 <div class="lg:w-1/2 flex justify-center lg:justify-end h-full">
-                    <div class="h-full">
+                    <div data-aos="zoom-in" class="h-full">
                         <img src="./src/images/welcome/image.png" alt="" class="h-full object-contain" />
                     </div>
                 </div>
@@ -78,6 +79,7 @@
 
         <script src="./src/popupScript.js"></script>
         <script src="./src/navigation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">
@@ -203,5 +205,8 @@
                 </div>
             </div>
         </div>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

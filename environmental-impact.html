@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +35,7 @@
                     <div>
                         <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
                     </div>
-                    <div>
+                    <div data-aos="fade-down">
                         <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Environmental Impact</h2>
                     </div>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
@@ -75,7 +76,7 @@
                 </div>
                 <!-- /End Header -->
 
-                <div class="flex items-center justify-center mt-[40vh] sm:mt-[6vh] md:mt-[40vh] lg:mt-[60vh]">
+                <div class="flex items-center justify-center mt-[40vh] sm:mt-[6vh] md:mt-[40vh] lg:mt-[60vh]" data-aos="zoom-in">
                     <div class="relative lg:w-[249px] lg:h-[61px] w-[160px] h-[48px] rounded-full bg-black/50 border border-tertiary p-[5px] cursor-pointer" onclick="togglePlan()" id="toggleButton">
                         <!-- Moveable Slider -->
                         <div
@@ -97,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="relative mt-10">
+                <div class="relative mt-10" data-aos="fade-up">
                     <div class="flex gap-4 overflow-x-scroll lg:overflow-visible scrollbar-hide xl:flex-wrap xl:justify-between xl:w-full" id="fossileCards">
                         <!-- Fossil Cards -->
                         <div class="w-[320px] shrink-0 sm:w-[290px] 2xl:w-[353px] p-4 bg-white shadow-lg rounded-lg overflow-hidden xl:flex-1 xl:max-w-[23%]">
@@ -143,7 +144,7 @@
                         scrollbar-width: none;
                     }
                 </style>
-                <div class="relative mt-10 hidden" id="solarCards">
+                <div class="relative mt-10 hidden" id="solarCards" data-aos="fade-up">
                     <div class="flex gap-4 overflow-x-scroll lg:overflow-visible scrollbar-hide xl:flex-wrap xl:justify-between xl:w-full">
                         <!-- Solar Cards -->
                         <div class="w-[320px] shrink-0 sm:w-[290px] 2xl:w-[353px] p-4 bg-white shadow-lg rounded-lg overflow-hidden xl:flex-1 xl:max-w-[23%]">
@@ -201,6 +202,9 @@
         <script src="./src/javaScript/enviremental.js"></script>
         <script src="./src/popupScript.js"></script>
         <script src="./src/navigation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+
+
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">

@@ -53,6 +53,7 @@ body{
     .h2 { font-size: 1.375rem; } /* 22px */
     .h3 { font-size: 32px; }  /* 20px */
     .h4 { font-size: 16px; } /* 32px */
+    .h5 { font-size: 18px; } /* 24px */
     .p { font-size: 20px; }      /* 16px */
     .p1 { font-size: 20px; } /* 16px */
     .p2 { font-size: 14px; } /* 16px */
@@ -122,6 +123,7 @@ body{
     .h2 { font-size: 2.25rem; } /* 36px */
     .h3 { font-size: 1.875rem; } /* 30px */
     .h4 { font-size: 24px; } /* 24 */
+    .h5 { font-size: 22px; } /* 24px */
     .p { font-size: 1.5rem; } /* 24px */
     .card-h1 { font-size: 38px; } /* 32px */
     .card-p { font-size: 20px; } /* 32px */
@@ -144,6 +146,7 @@ body{
     .h2 { font-size: 3rem; } /* 48px */
     .h3 { font-size: 2.25rem; } /* 36px */
     .h4 { font-size: 30px; } /* 3px */
+    .h5 { font-size: 22px; } /* 24px */
     .p { font-size: 1.75rem; } /* 28px */
     .p1 { font-size: 22px; } /* 16px */
     .fossile-heading{font-size: 24px}
@@ -185,6 +188,7 @@ body{
   @media (min-width: 1600px) {
     .page-title { font-size: 85px; } /* 80px */
     .card-title { font-size: 60px; }
+    .img-overlay-text{ font-size: 60px; }
     .card-center { font-size: 70px; }
     .card-text { font-size: 59px; } 
     .popup-text { font-size: 23px; } 
@@ -210,6 +214,7 @@ body{
   @media (min-width: 1820px) {
     .page-title { font-size: 110px; } /* 80px */
     .card-title { font-size: 80px; } 
+    .img-overlay-text{ font-size: 80px; }
     .card-center { font-size: 80px; }
     .card-text { font-size: 64px; }
     .popup-text { font-size: 28px; } 
@@ -236,6 +241,7 @@ body{
   @media (min-width: 1920px) {
     .page-title { font-size: 130px; } /* 80px */
     .card-title { font-size: 90px; }
+    .img-overlay-text{ font-size: 90px; }
     .card-center { font-size: 85px; }
     .card-text { font-size: 66px; } 
     .popup-text { font-size: 30px; } 

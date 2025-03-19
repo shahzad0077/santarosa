@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <!-- Raleway Font CDN -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,7 +22,7 @@
                     <div>
                         <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
                     </div>
-                    <div>
+                    <div data-aos="fade-down">
                         <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Who are we backed by?</h2>
                     </div>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
@@ -67,7 +68,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full text-black">
                         <!-- Left Column (50%) -->
                         <div class="space-y-6 flex flex-col">
-                            <div class="bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg flex flex-col xl:flex-row xl:space-x-6 space-y-3 xl:h-[287px] 2xl:h-full items-center">
+                            <div  data-aos="fade-up" class="bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg flex flex-col xl:flex-row xl:space-x-6 space-y-3 xl:h-[287px] 2xl:h-full items-center">
                                 <div class="space-y-1.5 flex flex-col justify-center xl:w-[60%] xl:h-[217px] 2xl:h-full">
                                     <h2 class="card-h1 font-[700px] tracking-wider font-heading">Solar Panels <span class="text-secondary font-bold card-h2 items-start">Qcells</span></h2>
                                     <p class="card-p text-tertiary" style="font-family: 'Raleway';">
@@ -78,14 +79,17 @@
                                     <img src="./src/images/backed-by/solar-pannel.png" alt="Card Image" class="w-full h-[200px] sm:h-[250px] md:h-[300px] xl:w-auto xl:h-[217px] object-cover rounded-md" />
                                 </div>
                             </div>
-                            <div class="bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg h-full flex-grow space-y-3 lg:space-y-6">
+                            <div  data-aos="fade-up" class="bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg h-full flex-grow flex flex-col space-y-3 lg:space-y-6">
                                 <h2 class="card-h2 font-[700px] text-start tracking-wider font-heading">Who are we backed by?</h2>
-                                <img src="./src/images/backed-by/qcells-img.png" alt="" />
+                                <div class="flex-grow">
+                                    <img src="./src/images/backed-by/qcells-img.png" alt="" class="w-full h-full object-cover" />
+                                </div>
                             </div>
+                            
                         </div>
 
                         <div class="space-y-6 flex flex-col">
-                            <div class="bg-white pt-6 px-5 md:pt-6 md:px-6 lg:pt-8 lg:px-7.5 space-y-4 sm:space-y-10 md:space-y-12 lg:space-y-16 rounded-lg shadow-lg h-full flex flex-col relative">
+                            <div  data-aos="fade-up" class="bg-white pt-6 px-5 md:pt-6 md:px-6 lg:pt-8 lg:px-7.5 space-y-4 sm:space-y-10 md:space-y-12 lg:space-y-16 rounded-lg shadow-lg h-full flex flex-col relative">
                                 <!-- div 1 -->
                                 <div>
                                     <h2 class="card-h2 font-[700px] tracking-wider leading-10 font-heading">Qcells Market Share</h2>
@@ -96,59 +100,59 @@
                             
                                
                                 <!-- div 2 (Progress Bars) -->
-<div class="flex flex-col justify-end  w-full"> 
-    <div class="flex flex-grow  justify-center items-end gap-x-4 sm:gap-x-12 lg:gap-x-14 xl:gap-x-16 w-full h-[442px] rounded-lg">
-        <!-- Progress Bar 1 -->
-        <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
-            <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-8 text-white text-xs font-medium"
-                style="height: 100%; writing-mode: horizontal-tb;">
-                <span class="rotate-270 bodytext-lite">32.1%</span> <!-- Top Text -->
-                <span class="rotate-270 bodytext-lite">Qcells</span> <!-- Bottom Text -->
-            </div>
-        </div>
+                                        <div class="flex flex-col justify-end  w-full"> 
+                                            <div class="flex flex-grow  justify-center items-end gap-x-4 sm:gap-x-12 lg:gap-x-14 xl:gap-x-16 w-full h-[442px] rounded-lg">
+                                                <!-- Progress Bar 1 -->
+                                                <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
+                                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-8 text-white text-xs font-medium"
+                                                        style="height: 100%; writing-mode: horizontal-tb;">
+                                                        <span class="rotate-270 bodytext-lite">32.1%</span> <!-- Top Text -->
+                                                        <span class="rotate-270 bodytext-lite">Qcells</span> <!-- Bottom Text -->
+                                                    </div>
+                                                </div>
 
-        <!-- Progress Bar 2 -->
-        <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
-            <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-8 text-white text-xs font-medium"
-                style="height: 90%; writing-mode: horizontal-tb;">
-                <span class="rotate-270 bodytext-lite">9.0%</span> <!-- Top Text -->
-                <span class="rotate-270 bodytext-lite">Solar</span> <!-- Bottom Text -->
-            </div>
-        </div>
+                                                <!-- Progress Bar 2 -->
+                                                <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
+                                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-8 text-white text-xs font-medium"
+                                                        style="height: 90%; writing-mode: horizontal-tb;">
+                                                        <span class="rotate-270 bodytext-lite">9.0%</span> <!-- Top Text -->
+                                                        <span class="rotate-270 bodytext-lite">Solar</span> <!-- Bottom Text -->
+                                                    </div>
+                                                </div>
 
-        <!-- Progress Bar 3 -->
-        <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
-            <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-12 text-white text-xs font-medium"
-                style="height: 80%; writing-mode: horizontal-tb;">
-                <span class="rotate-270 bodytext-lite">8.1%</span> <!-- Top Text -->
-                <span class="rotate-270 bodytext-lite">Maxeon</span> <!-- Bottom Text -->
-            </div>
-        </div>
+                                                <!-- Progress Bar 3 -->
+                                                <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
+                                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-12 text-white text-xs font-medium"
+                                                        style="height: 80%; writing-mode: horizontal-tb;">
+                                                        <span class="rotate-270 bodytext-lite">8.1%</span> <!-- Top Text -->
+                                                        <span class="rotate-270 bodytext-lite">Maxeon</span> <!-- Bottom Text -->
+                                                    </div>
+                                                </div>
 
-        <!-- Progress Bar 4 -->
-        <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
-            <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-6 text-white text-xs font-medium"
-                style="height: 70%; writing-mode: horizontal-tb;">
-                <span class="rotate-270 bodytext-lite">7.4%</span> <!-- Top Text -->
-                <span class="rotate-270 bodytext-lite">REC</span> <!-- Bottom Text -->
-            </div>
-        </div>
+                                                <!-- Progress Bar 4 -->
+                                                <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
+                                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-6 text-white text-xs font-medium"
+                                                        style="height: 70%; writing-mode: horizontal-tb;">
+                                                        <span class="rotate-270 bodytext-lite">7.4%</span> <!-- Top Text -->
+                                                        <span class="rotate-270 bodytext-lite">REC</span> <!-- Bottom Text -->
+                                                    </div>
+                                                </div>
 
-        <!-- Progress Bar 5 -->
-        <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
-            <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-12 text-white text-xs font-medium"
-                style="height: 60%; writing-mode: horizontal-tb;">
-                <span class="rotate-270 bodytext-lite">5.5%</span> <!-- Top Text -->
-                <span class="rotate-270 bodytext-lite">Canadian</span> <!-- Bottom Text -->
-            </div>
-        </div>
-    </div>
-</div>
+                                                <!-- Progress Bar 5 -->
+                                                <div class="flex flex-col justify-end w-12 h-full bg-[#EAEAEA] rounded-full overflow-hidden">
+                                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] w-full rounded-full transition-all duration-500 flex flex-col justify-between items-center py-12 text-white text-xs font-medium"
+                                                        style="height: 60%; writing-mode: horizontal-tb;">
+                                                        <span class="rotate-270 bodytext-lite">5.5%</span> <!-- Top Text -->
+                                                        <span class="rotate-270 bodytext-lite">Canadian</span> <!-- Bottom Text -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                             </div>
                             
 
-                            <div class="bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg h-full flex-grow space-y-3 lg:space-y-3">
+                            <div  data-aos="fade-up" class="bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg h-full flex-grow space-y-3 lg:space-y-3">
                                 <h2 class="card-h2 font-[700px] text-start tracking-wider font-heading">We work with Qcells</h2>
                                 <div class="flex flex-col space-x-2 lg:space-x-2.5">
                                     <div class="flex items-center space-x-2.5">
@@ -171,7 +175,7 @@
                     <!-- Row for Card 5 & 6 (Full Width) -->
                     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-8 gap-6 w-full text-black">
                         <!-- Card 5 (40%) -->
-                        <div class="lg:col-span-3 bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg flex flex-col h-full space-y-3 lg:space-y-7.5">
+                        <div  data-aos="fade-up" class="lg:col-span-3 bg-white py-6 px-5 md:py-6 md:px-6 lg:py-8 lg:px-7.5 rounded-lg shadow-lg flex flex-col h-full space-y-3 lg:space-y-7.5">
 
                             <img src="./src/images/backed-by/qcells-logo.png" alt="" class="w-[100px] h-[35px] sm:w-[150px] sm:h-[40px] md:w-[150px] md:h-[50px] max-w-full max-h-[64px] object-contain self-start left-0" />
 
@@ -184,7 +188,7 @@
                         </div>
 
                         <!-- Card 6 (60%) -->
-                        <div class="lg:col-span-5 bg-transparent w-full rounded-lg shadow-lg flex">
+                        <div  data-aos="fade-up" class="lg:col-span-5 bg-transparent w-full rounded-lg shadow-lg flex">
                             <div class="w-full rounded-lg overflow-hidden relative">
                                 <div class="w-full h-0 pb-[56.25%] relative">
                                     <!-- 16:9 Aspect Ratio -->
@@ -215,6 +219,7 @@
 
         <script src="./src/popupScript.js"></script>
         <script src="./src/navigation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">

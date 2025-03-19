@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <!-- Raleway Font CDN -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -22,8 +23,8 @@
                     <div>
                         <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
                     </div>
-                    <div>
-                        <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Why</h2>
+                    <div data-aos="fade-down">
+                        <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Why?</h2>
                     </div>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
                         <button id="menuBtn" class="text-black z-10">
@@ -62,13 +63,13 @@
                     </div>
                 </div>
                 <!-- /End Header -->
-                    <p class="text-[16px] sm:text-[20px] md:text-[24px] xl:text-[40px] text-center" style="font-family: 'Raleway';">What are your reasons for going solar?</p>
+                    <p  data-aos="zoom-in" class="text-[16px] sm:text-[20px] md:text-[24px] xl:text-[40px] text-center" style="font-family: 'Raleway';">What are your reasons for going solar?</p>
                 </div>
                 <div class="relative h-[200px] w-[350px] sm:h-auto sm:w-[600px] md:w-full xl:w-full xl:h-full flex items-center justify-center rounded-xl overflow-hidden">
                     <img src="./src/images/why/solar home.png" alt="Image" class="rounded-4xl w-full h-full object-cover" />
 
                     <!-- Left Side Buttons -->
-                    <div class="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-10 md:gap-16 lg:gap-20 xl:gap-40 z-10" style="font-family: 'Field Gothic TEST';">
+                    <div  data-aos="fade-right" class="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-10 md:gap-16 lg:gap-20 xl:gap-40 z-10" style="font-family: 'Field Gothic TEST';">
                         <span
                             class="text-[12px] sm:text-[18px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-black/36 tracking-wider text-white px-2 py-1 sm:px-4 sm:py-2 lg:px-6 lg:py-3 xl:px-10 xl:py-4 border-white border rounded-full w-fit"
                         >
@@ -87,7 +88,7 @@
                     </div>
 
                     <!-- Right Side Buttons -->
-                    <div class="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-16 items-end z-10" style="font-family: 'Field Gothic TEST';">
+                    <div  data-aos="fade-left" class="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-16 items-end z-10" style="font-family: 'Field Gothic TEST';">
                         <span
                             class="text-[12px] sm:text-[18px] md:text-[26px] lg:text-[32px] xl:text-[40px] bg-black/36 tracking-wider text-white px-2 py-0 sm:px-4 sm:py-2 lg:px-6 lg:py-3 xl:px-10 xl:py-4 border-white border rounded-full w-fit"
                         >
@@ -111,7 +112,7 @@
                     </div>
                 </div>
 
-                <div class="flex justify-center items-center bg-white p-4 md:p-6 lg:p-10 w-full mt-4">
+                <div  data-aos="fade-up" class="flex justify-center items-center rounded-lg bg-white p-4 md:p-6 lg:p-10 w-full mt-4">
                     <h1 class="text-black card-h3 tracking-wider" style="font-family: 'Field Gothic TEST';">Did You Know Southern California Electric Rates are already over <span class="text-primary"> $0.60 /KWh </span>?!</h1>
                 </div>
             </div>
@@ -135,6 +136,7 @@
 
         <script src="./src/popupScript.js"></script>
         <script src="./src/navigation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">

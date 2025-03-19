@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <!-- Raleway Font CDN -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,7 +22,7 @@
                     <div>
                         <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
                     </div>
-                    <div>
+                    <div data-aos="fade-down">
                         <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Who are we backed by?</h2>
                     </div>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
@@ -66,18 +67,18 @@
                     <!-- First Column -->
                     <div class="flex flex-col gap-4 flex-grow min-h-full">
                         <!-- Heading -->
-                        <h2 class="page-title tracking-wider font-heading leading-20">We are certified installers for</h2>
+                        <h2 data-aos="zoom-in" class="page-title tracking-wider font-heading leading-20">We are certified installers for</h2>
 
                         <!-- Tabs -->
                         <div class="flex font-heading mb-6 space-x-4">
-                            <button data-tab="tesla" class="tab-button flex-1 px-2 py-1 sm:px-10 sm:py-4 bg-secondary text-white rounded-lg tracking-wider h5 cursor-pointer">Tesla</button>
-                            <button data-tab="enphase" class="tab-button flex-1 px-2 py-1 sm:px-10 sm:py-4 bg-transparent text-white rounded-lg tracking-wider h5 cursor-pointer">Enphase</button>
-                            <button data-tab="franklin" class="tab-button flex-1 px-2 py-1 sm:px-10 sm:py-4 bg-transparent text-white rounded-lg tracking-wider h5 cursor-pointer">Franklin</button>
+                            <button data-aos="zoom-in" data-tab="tesla" class="tab-button flex-1 px-2 py-1 sm:px-10 sm:py-4 bg-secondary text-white rounded-lg tracking-wider h5 cursor-pointer">Tesla</button>
+                            <button data-aos="zoom-in" data-tab="enphase" class="tab-button flex-1 px-2 py-1 sm:px-10 sm:py-4 bg-transparent text-white rounded-lg tracking-wider h5 cursor-pointer">Enphase</button>
+                            <button data-aos="zoom-in" data-tab="franklin" class="tab-button flex-1 px-2 py-1 sm:px-10 sm:py-4 bg-transparent text-white rounded-lg tracking-wider h5 cursor-pointer">Franklin</button>
                         </div>
 
-                        <div class="flex flex-col lg:flex-row w-full max-w-4xl space-y-6 lg:space-y-0 lg:space-x-6">
+                        <div data-aos="fade-up" class="flex flex-col lg:flex-row w-full max-w-4xl space-y-6 lg:space-y-0 lg:space-x-6">
                             <!-- Card Container -->
-                            <div id="cardContainer" class="bg-white text-black p-8 rounded-lg shadow-md flex flex-col items-center space-y-3 lg:space-y-7 text-center">
+                            <div  id="cardContainer" class="bg-white text-black p-8 rounded-lg shadow-md flex flex-col items-center space-y-3 lg:space-y-7 text-center">
                                 <img id="cardImage" src="./src/images/system-types/tesla-logo.png" alt="Card Image" class="w-[150px] sm:w-[170px] md:w-[190px] lg:w-[220px] xl:w-[240px]" />
                                 <p id="cardText" class="p tracking-wider text-field" style="font-family: 'Field Gothic TEST';">
                                     Founded in 2006, Tesla is a global leader in energy storage and electric vehicles.
@@ -114,6 +115,7 @@
         <script src="./src/popupScript.js"></script>
         <script src="./src/javaScript/system-types.js"></script>
         <script src="./src/navigation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">

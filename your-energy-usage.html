@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <!-- Raleway Font CDN -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,7 +22,7 @@
                     <div>
                         <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
                     </div>
-                    <div>
+                    <div data-aos="fade-down">
                         <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Your Energy Usage</h2>
                     </div>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
@@ -67,7 +68,7 @@
                     <div class="lg:w-2/3 w-full flex flex-col">
                         <!-- Nested Flex (Two Columns + Bottom Full-Width) -->
                         <div class="flex flex-col lg:flex-row flex-1 space-y-4 lg:space-y-0 lg:space-x-4">
-                            <div class="lg:w-[65%] bg-white/90 py-6 px-5 md:py-8 md:px-6 lg:py-10 lg:px-7.5 space-y-6 rounded-2xl max-w-full">
+                            <div data-aos="fade-up" class="lg:w-[65%] bg-white/90 py-6 px-5 md:py-8 md:px-6 lg:py-10 lg:px-7.5 space-y-6 rounded-2xl max-w-full">
                                 <div>
                                     <div class="flex justify-between flex-col xl:flex-row space-y-2 sm:space-y-4 items-center">
                                         <h class="card-h2 font-normal tracking-wider font-heading">Your home uses</h>
@@ -116,8 +117,9 @@
                                         <path id="progressArc" d="M10,50 A40,40 0 0,1 90,50" stroke="url(#gaugeGradient)" stroke-width="8" fill="none" stroke-linecap="round" 
                                               stroke-dasharray="100" stroke-dashoffset="100" />
                                 
-                                        <!-- Dotted Border Arc (Outside the Gradient Arc) -->
-                                        <path d="M8,50 A42,42 0 0,1 92,50" stroke="black" stroke-width="2" fill="none" stroke-dasharray="4,6" />
+                                              <path d="M20,50 A25,25 0 0,1 80,50" stroke="black" stroke-width="1" fill="none" stroke-dasharray="4,6" />
+
+
                                     </svg>
                                 
                                     <!-- Current Value Indicator -->
@@ -149,7 +151,7 @@
                              
 
                             </div>
-                            <div class="lg:w-[35%] bg-white/90 py-6 px-5 md:py-8 md:px-6 lg:py-10 lg:px-7.5 space-y-10 rounded-2xl max-w-full font-heading">
+                            <div  data-aos="fade-up" class="lg:w-[35%] bg-white/90 py-6 px-5 md:py-8 md:px-6 lg:py-10 lg:px-7.5 space-y-10 rounded-2xl max-w-full font-heading">
                                 <h4 class="card-h2 font-normal tracking-wide leading-9">Calculated amount per day/year</h4>
                                 <div class="flex flex-col justify-between space-y-10">
                                     <div class="flex space-x-6 items-center pb-5 border-b border-tertiary">
@@ -178,7 +180,7 @@
                             </div>
                         </div>
                         <!-- Full-Width Row (Bottom) -->
-                        <div class="w-full bg-white/90 lg:py-[30px] py-4 px-[30px] lg:px-0 mt-4 text-black flex flex-col justify-center items-center tracking-wider text-center rounded-lg">
+                        <div  data-aos="fade-up" class="w-full bg-white/90 lg:py-[30px] py-4 px-[30px] lg:px-0 mt-4 text-black flex flex-col justify-center items-center tracking-wider text-center rounded-lg">
                             <h3 class="card-h2  font-heading">
                                 Recommended System Size of 140% Offset
                             </h3>
@@ -189,7 +191,7 @@
 
                     </div>
                     <!-- Second Column (Equal Height - Moves Below on Small Screens) -->
-                    <div class="flex-1 py-6 px-5 md:py-8 md:px-6 lg:py-10 lg:px-7.5 lg:w-[485px] rounded-2xl bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] backdrop-blur-[30px] font-heading">
+                    <div  data-aos="fade-up" class="flex-1 py-6 px-5 md:py-8 md:px-6 space-y-5 lg:py-10 lg:px-7.5 lg:w-[485px] rounded-2xl bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] backdrop-blur-[30px] font-heading">
                         <div class="flex justify-center">
                             <img src="./src/images/energy-usage/usa 1.png" alt="" />
                         </div>
@@ -222,6 +224,7 @@
     <script src="./src/popupScript.js"></script>
     <script src="./src/javaScript/energy-usage.js"></script>
     <script src="./src/navigation.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">

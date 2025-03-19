@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <!-- Raleway Font CDN -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,8 +22,8 @@
                     <div>
                         <img src="./src/images/index/Logo.png" alt="Logo" class="w-28 h-20 flex justify-center lg:justify-start" />
                     </div>
-                    <div>
-                        <h2 class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Adrian peter</h2>
+                    <div data-aos="fade-down"> 
+                        <h2   class="h1 tracking-wider font-[700px] text-white text-center font-heading font-heading">Adrian peter</h2>
                     </div>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
                         <button id="menuBtn" class="text-black z-10">
@@ -61,29 +62,29 @@
                     </div>
                 </div>
                 <!-- /End Header -->
-            </div>
+            
 
-            <div class="space-y-6">
+            <div class="space-y-10">
                 <div class="flex justify-center items-center">
                     <div class="w-full">
                         <!-- Large Image (First Div) -->
-                        <div class="w-full">
+                        <div data-aos="fade-up" class="w-full">
                             <img id="mainImage" src="./src/images/galley-open/main-card.png" alt="Main Image" class="w-full h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] rounded-lg object-cover" />
                         </div>
 
                         <!-- Image Grid (Second Div) -->
                         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-6">
-                            <img src="./src/images/galley-open/dynamic-img (1).png" alt="Thumbnail 1" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                            <img src="./src/images/galley-open/dynamic-img (1).png" alt="Thumbnail 1" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" data-aos="fade-up"/>
 
-                            <img src="./src/images/galley-open/dynamic-img (2).png" alt="Thumbnail 2" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                            <img src="./src/images/galley-open/dynamic-img (2).png" alt="Thumbnail 2" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" data-aos="fade-up"/>
 
-                            <img src="./src/images/galley-open/dynamic-img (3).png" alt="Thumbnail 3" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                            <img src="./src/images/galley-open/dynamic-img (3).png" alt="Thumbnail 3" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" data-aos="fade-up"/>
 
-                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 4" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 4" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" data-aos="fade-up"/>
 
-                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 5" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 5" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" data-aos="fade-up"/>
 
-                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 6" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" />
+                            <img src="./src/images/galley-open/Rectangle 3706.png" alt="Thumbnail 6" class="w-fit h-auto rounded-lg object-cover cursor-pointer" onclick="changeImage(this)" data-aos="fade-up"/>
                         </div>
                     </div>
 
@@ -93,10 +94,11 @@
                             mainImage.src = element.src;
                         }
                     </script>
+                     <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
                 </div>
             </div>
 
-            <div class="relative w-full mx-auto rounded-lg overflow-hidden mt-10 lg:mt-20 mb-10">
+            <div data-aos="zoom-in" class="relative w-full mx-auto rounded-lg overflow-hidden mt-10 lg:mt-20 mb-10">
                 <!-- Background Image-->
                 <div class="w-full h-full">
                     <img src="./src/images/gallery/snazzy-image 1.png" alt="Background Image" class="w-full h-full" />
@@ -122,6 +124,10 @@
                 </div>
             </div>
         </div>
+        </div>
         <script src="./src/navigation.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

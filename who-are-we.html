@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./src/output.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
         <link href="https://fonts.cdnfonts.com/css/field-gothic-test" rel="stylesheet" />
         <!-- Raleway Font CDN -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -19,7 +20,7 @@
                 <!-- Heading (Centered at the Top) -->
                 <div class="flex items-center justify-between w-full">
                     <div></div>
-                    <h2 class="h1 tracking-wider font-semibold text-white text-center font-heading" style="font-family: 'Field Gothic TEST';">Who are we?</h2>
+                    <h2 data-aos="fade-down" class="h1 tracking-wider font-semibold text-white text-center font-heading" style="font-family: 'Field Gothic TEST';">Who are we?</h2>
                     <div class="flex bg-white rounded-full p-2 z-[9999]">
                         <button id="menuBtn" class="text-black z-10">
                             <!-- Menu Icon SVG -->
@@ -56,114 +57,15 @@
                         </button>
                     </div>
 
-                    <!-- Popup Card -->
-                    <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center items-center z-[9999] overflow-auto">
-                        <div class="bg-white text-black p-10 rounded-xl w-[90%] max-h-[90vh] overflow-y-auto mx-auto space-y-6 relative">
-                            <!-- First Row (Responsive Layout) -->
-                            <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
-                                <!-- Left Section -->
-                                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
-                                    <div class="bg-gradient-to-b from-[#FC8A56] to-[#EF3A0F] text-white p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg">
-                                        <img src="./src/images/popup-icons/popup-elemets (2).png" alt="" />
-                                        <h1 class="popup-text text-center w-fit">Your Energy Usage</h1>
-                                    </div>
-                                    <div class="grid gap-6">
-                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
-                                            <img src="./src/images/popup-icons/popup-elemets (5).png" alt="" class="w-fit" />
-                                            <h1 class="popup-text text-center w-fit">Your Electric Company vs Solar</h1>
-                                        </div>
-                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
-                                            <img src="./src/images/popup-icons/popup-elemets (3).png" alt="" class="w-fit" />
-                                            <h1 class="popup-text text-center w-fit">Environmental Impact</h1>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Right Section -->
-                                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
-                                    <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg">
-                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3">
-                                            <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
-                                            <h1 class="popup-text text-center w-fit">Solar Steps</h1>
-                                        </div>
-                                        <img src="./src/images/popup-icons/popup-elemets (1).png" alt="" />
-                                    </div>
-                                    <div class="grid gap-6">
-                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
-                                            <img src="./src/images/popup-icons/popup-elemets (4).png" alt="" class="w-fit" />
-                                            <h1 class="popup-text text-center w-fit">Your System Specs</h1>
-                                        </div>
-                                        <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
-                                            <img src="./src/images/popup-icons/popup-elemets (6).png" alt="" class="w-fit" />
-                                            <h1 class="popup-text text-center w-fit">Why?</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Second Row (Responsive 4 Columns) -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <!-- Card 1 -->
-                                <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-lg">
-                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3">
-                                        <img src="./src/images/popup-icons/popup-elemets (7).png" alt="" />
-                                        <h1 class="popup-text text-center w-fit">System Types</h1>
-                                    </div>
-                                    <img src="./src/images/popup-icons/type.png" alt="" />
-                                </div>
-
-                                <!-- Card 2 (Inner Cards) -->
-                                <div class="grid gap-6">
-                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg">
-                                        <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
-                                        <h1 class="popup-text text-center w-fit">Who are we?</h1>
-                                    </div>
-                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 p-3 border border-tertiary rounded-lg">
-                                        <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
-                                        <h1 class="popup-text text-center w-fit">Our Installer</h1>
-                                    </div>
-                                </div>
-
-                                <!-- Card 3 -->
-                                <div class="border border-tertiary lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
-                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
-                                </div>
-
-                                <!-- Card 4 -->
-                                <div class="border border-tertiary lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
-                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                                <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
-                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
-                                    <img src="./src/images/popup-icons/Projects.png" alt="" />
-                                </div>
-                                <div class="border border-tertiary p-4 lg:p-10 flex flex-col justify-center items-center space-y-4 rounded-3xl">
-                                    <h1 class="popup-text text-center w-fit">Who are we backed by?</h1>
-                                </div>
-                                <div class="grid gap-6">
-                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 p-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
-                                        <img src="./src/images/popup-icons/who.png" alt="" class="w-fit" />
-                                        <h1 class="popup-text text-center w-fit">Who are we?</h1>
-                                    </div>
-                                    <div class="grid grid-cols-[auto_1fr] items-center gap-3 lg:px-5 lg:py-4 border border-tertiary rounded-lg">
-                                        <img src="./src/images/popup-icons/installer.png" alt="" class="w-fit" />
-                                        <h1 class="popup-text text-center w-fit">Our installer</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
 
-                <div class="w-full max-w-full mx-auto bg-white/90 text-black p-4 xl:py-16 xl:px-14 rounded-lg shadow-md text-center" style="font-family: 'Field Gothic TEST';">
+                <div data-aos="fade-up" class="w-full max-w-full mx-auto bg-white/90 text-black p-4 md:py-8 lg:py-12 xl:py-16 xl:px-14 rounded-lg shadow-md text-center" style="font-family: 'Field Gothic TEST';">
                     <h2 class="page-title font-bold mb-4 tracking-wides relative">
                         In
                         <span class="text-white bg-primary px-4 py-1 rounded-tl-xl relative inline-block">
                             2008
-                            <img src="./src/images/who-are-we/text-elemet.png" alt="Decorative Image" class="absolute -top-8 -right-8 w-8 h-8" />
+                            <img src="./src/images/who-are-we/text-elemet.png" alt="Decorative Image" class="absolute  -top-4 -right-4 md:-top-6 md:-right-6 lg:-top-8 lg:-right-8 w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />
                         </span>
                     </h2>
 
@@ -181,10 +83,10 @@
 
                     <!-- 4 Images in Grid -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 px-6">
-                        <img src="./src/images/who-are-we/card-imag (4).png" alt="Image 1" class="w-full rounded-lg" />
-                        <img src="./src/images/who-are-we/card-imag (1).png" alt="Image 2" class="w-full rounded-lg" />
-                        <img src="./src/images/who-are-we/card-imag (3).png" alt="Image 3" class="w-full rounded-lg" />
-                        <img src="./src/images/who-are-we/card-imag (2).png" alt="Image 4" class="w-full rounded-lg" />
+                        <img data-aos="fade-up" src="./src/images/who-are-we/card-imag (4).png" alt="Image 1" class="w-full rounded-lg" />
+                        <img data-aos="fade-up" src="./src/images/who-are-we/card-imag (1).png" alt="Image 2" class="w-full rounded-lg" />
+                        <img data-aos="fade-up" src="./src/images/who-are-we/card-imag (3).png" alt="Image 3" class="w-full rounded-lg" />
+                        <img data-aos="fade-up" src="./src/images/who-are-we/card-imag (2).png" alt="Image 4" class="w-full rounded-lg" />
                     </div>
 
                     <!-- Centered Logo -->
@@ -194,7 +96,7 @@
 
                     <!-- 6 Responsive Cards -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 px-6 text-black">
-                        <div class="bg-white p-6 rounded-lg shadow-md space-y-3 text-center">
+                        <div data-aos="zoom-in" class="bg-white p-6 rounded-lg shadow-md space-y-3 text-center">
                             <div class="flex justify-between">
                                 <div class="flex space-x-2 sm:space-x-4">
                                     <img src="./src/images/who-are-we/dp.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
@@ -212,7 +114,7 @@
                                 home backup that exceeded my expectations. Their attentiveness to detail was truly impressive, and they kept me informed throughout the installation process with photos at every step.
                             </p>
                         </div>
-                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                        <div data-aos="zoom-in" class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
                             <div class="flex justify-between">
                                 <div class="flex space-x-2 sm:space-x-4">
                                     <img src="./src/images/who-are-we/dp2.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
@@ -231,7 +133,7 @@
                                 would highly recommend them.
                             </p>
                         </div>
-                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                        <div data-aos="zoom-in" class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
                             <div class="flex justify-between">
                                 <div class="flex space-x-2 sm:space-x-4">
                                     <img src="./src/images/who-are-we/dp3.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
@@ -250,7 +152,7 @@
                                 successfully.
                             </p>
                         </div>
-                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                        <div data-aos="zoom-in" class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
                             <div class="flex justify-between">
                                 <div class="flex space-x-2 sm:space-x-4">
                                     <img src="./src/images/who-are-we/dp.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
@@ -269,7 +171,7 @@
                                 model, several things were different. Great job making everything come together!
                             </p>
                         </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md space-y-3 text-center">
+                        <div data-aos="zoom-in" class="bg-white p-6 rounded-lg shadow-md space-y-3 text-center">
                             <div class="flex justify-between">
                                 <div class="flex space-x-2 sm:space-x-4">
                                     <img src="./src/images/who-are-we/dp5.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
@@ -288,7 +190,7 @@
                                 gas. I highly recommend Santa Rosa Solar for anyone seeking a smooth, pressure-free experience.
                             </p>
                         </div>
-                        <div class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
+                        <div data-aos="zoom-in" class="bg-white p-6 rounded-lg space-y-3 shadow-md text-center">
                             <div class="flex justify-between">
                                 <div class="flex space-x-2 sm:space-x-4">
                                     <img src="./src/images/who-are-we/dp6.png" alt="" class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 self-center" />
@@ -330,6 +232,7 @@
                 
         <script src="./src/popupScript.js"></script>
         <script src="./src/navigation.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 
         <!-- Popup Card -->
         <div id="popup" class="fixed inset-0 bg-black/50 bg-opacity-50 hidden flex justify-center scrollbar-hide items-center z-[10] overflow-auto pt-20">
